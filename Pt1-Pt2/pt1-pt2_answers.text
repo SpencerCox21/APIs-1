@@ -1,0 +1,65 @@
+<p>part 1.1        https://swapi.dev/api/people/4/</p>
+
+
+<p>part 1.2        https://swapi.dev/api/planets/2/</p>
+
+
+<p>part 1.3        https://swapi.dev/api/starships/10/</p>
+
+
+<p>part 1.4        https://swapi.dev/api/species/2/</p>
+
+
+<p>part 1.5        
+    https://swapi.dev/api/films/1/,
+    https://swapi.dev/api/films/2/,
+    https://swapi.dev/api/films/3/,
+    https://swapi.dev/api/films/4/,
+    https://swapi.dev/api/films/5/,
+    https://swapi.dev/api/films/6/</p>
+
+
+<p>part 1.6        https://swapi.dev/api/starships/?search=falcon</p>
+
+
+
+
+
+
+
+<p>part 2.1         it accepts a body, it is expecting text string. </p>
+
+<p>part 2.2         the get request sends back an array of objects. </p>
+
+<p>part 2.3         https://practiceapi.devmountain.com/api/posts?id=555</p>
+
+<p>part 2.4          responses:
+    200:
+      description: Returns an array of filtered posts
+      schema:
+        $ref: '#/definitions/ApiReturn'
+    409:
+      description: Request query is missing required text property.  </p>
+
+<p>part 2.5           https://practiceapi.devmountain.com/api/posts 
+    {
+        "text": "Spencer Cox"
+      }
+</p>
+
+<p>part 2.6            https://practiceapi.devmountain.com/api/posts?id=1823  </p>
+
+<p>part 2.7           https://practiceapi.devmountain.com/api/posts/filter?text=blue  </p>
+
+<p>part 2.8            Content-Type = application/json </p>
+
+<p>part 2.9            409:
+  description: Request was missing req.query.id or req.body.text     </p>
+
+<p>part 2.10           200:
+  description: Returns an array of all posts
+  schema:
+    $ref: '#/definitions/ApiReturn'
+  
+  You will always get this 200 response because it is the only response that is programmed to run when you send a GET</p>
+
